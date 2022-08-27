@@ -30,14 +30,16 @@ const Main = () => {
 	}
 
 	function setActiveMenuMobile(e,index) {
-		e.preventDefault()
+		e.preventDefault() // pour éviter que la page se recharge
 		const tmp = TabsContent[index];
-		let tmpArray = TabsContent
+		let tmpArray = TabsContent //copie du tableau d'objets initialisé avant useState
+
 		tmpArray.splice(index,1)
 		tmpArray.unshift(tmp)
-		console.log(tmpArray);
+		// pour mettre l'élément cliqué au début
+
+		
 		setLeftTabs(tmpArray)
-		setActiveTab(index)
 		setOpenNavbar(false)
 	}
 

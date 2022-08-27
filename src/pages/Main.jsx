@@ -38,7 +38,7 @@ const Main = () => {
 		tmpArray.unshift(tmp)
 		// pour mettre l'élément cliqué au début
 
-		
+		setActiveTab(index) // permet de changer le contenu tab courant
 		setLeftTabs(tmpArray)
 		setOpenNavbar(false)
 	}
